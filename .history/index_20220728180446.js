@@ -330,13 +330,13 @@ Use artistInfo to do the following:
 */
 
 function artistInfo(array, name){
-  const bioArr = [];
+  const bioArray = [];
   for(let i = 0; i < array.length; i++){
     if (array[i].name === (name)){
-      bioArr.push(array[i].bio);
+      bioArray.push(array[i].bio);
     }
   }
-return bioArr[0];
+return bioArray;
 }
 
 console.log('task 8:', artistInfo(artists, 'Frida Kahlo'));
